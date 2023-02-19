@@ -1,6 +1,8 @@
+import { Navbar } from "./Navbar";
+
 function App() {
   return (
-    <>Ready</>
+    <Navbar></Navbar>
   )
 }
 
