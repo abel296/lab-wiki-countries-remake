@@ -25,10 +25,10 @@ export const CountryDetails = ({ countriesList }) => {
                     <tr>
                         <td>Borders</td>
                         <td>
-                            { country.borders.length === 0 && <p>None</p> }
+                            { (!country.borders || country.borders.length === 0) && <p>None</p> }
                             <ul>
                                 { country.borders
-                                    .map(borderCountry => countriesList
+                                    ?.map(borderCountry => countriesList
                                         .map(country => country.cca3 === borderCountry
                                             && <li key={country.cca3}><Link to={ `/country/${ country.cca3 }` }>{ country.name.common }</Link></li>)
                                     ) }
