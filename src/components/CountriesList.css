@@ -1,9 +1,8 @@
 .countries-list {
-    max-height: 90vh;
+    max-height: 70vh;
     overflow: scroll;
 }
 
 .item {
     list-style: none;
-    padding: .4rem;
 }
